@@ -1,0 +1,28 @@
+test_adjacent_transparent_cancelled_and_zero_length_do_not_conflict (test_app.CalendarTests.test_adjacent_transparent_cancelled_and_zero_length_do_not_conflict) ... ok
+test_all_day_exclusive_end_and_folded_text_roundtrip (test_app.CalendarTests.test_all_day_exclusive_end_and_folded_text_roundtrip) ... ok
+test_dst_gap_and_ambiguity_rejected (test_app.CalendarTests.test_dst_gap_and_ambiguity_rejected) ... ok
+test_dst_repeated_hour_orders_absolute_instants (test_app.CalendarTests.test_dst_repeated_hour_orders_absolute_instants) ... ok
+test_duplicate_uid_and_invalid_calendar_rejected (test_app.CalendarTests.test_duplicate_uid_and_invalid_calendar_rejected) ... ok
+test_http_host_origin_and_remote_opt_in (test_app.CalendarTests.test_http_host_origin_and_remote_opt_in) ... "POST /api/import HTTP/1.1" 403 -
+"GET /api/state HTTP/1.1" 403 -
+ok
+test_overlap_duration_and_window_clipping (test_app.CalendarTests.test_overlap_duration_and_window_clipping) ... ok
+test_real_http_feed_merge_timezone_conflicts_and_exports (test_app.CalendarTests.test_real_http_feed_merge_timezone_conflicts_and_exports) ... "GET /fixtures/studio.ics HTTP/1.1" 200 -
+"POST /api/import HTTP/1.1" 200 -
+"GET /fixtures/operations.ics HTTP/1.1" 200 -
+"POST /api/import HTTP/1.1" 200 -
+"GET /api/export.ics?start=2026-09-28&end=2026-10-05 HTTP/1.1" 200 -
+"GET /api/conflicts.csv?start=2026-09-28&end=2026-10-05 HTTP/1.1" 200 -
+ok
+test_remove_source_via_http (test_app.CalendarTests.test_remove_source_via_http) ... "POST /api/remove HTTP/1.1" 200 -
+ok
+test_replacement_requires_explicit_flag (test_app.CalendarTests.test_replacement_requires_explicit_flag) ... ok
+test_unicode_export_line_folding_and_csv_formula_safety (test_app.CalendarTests.test_unicode_export_line_folding_and_csv_formula_safety) ... "GET /api/conflicts.csv?start=2026-09-28&end=2026-10-05 HTTP/1.1" 200 -
+ok
+test_unsupported_altrep_rejects_atomic_source_replacement (test_app.CalendarTests.test_unsupported_altrep_rejects_atomic_source_replacement) ... ok
+test_unsupported_recurrence_rejects_entire_replace (test_app.CalendarTests.test_unsupported_recurrence_rejects_entire_replace) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.613s
+
+OK

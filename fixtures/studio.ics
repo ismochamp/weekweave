@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WeekWeave//Fictional Verification Fixture//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Studio · verification fixture
+BEGIN:VEVENT
+UID:studio-kickoff@fixture.example
+DTSTART;TZID=Europe/Berlin:20260928T093000
+DTEND;TZID=Europe/Berlin:20260928T103000
+SUMMARY:Brand direction workshop
+LOCATION:Studio room 2
+DESCRIPTION:Fictional verification event. Review identity concepts and next steps.
+END:VEVENT
+BEGIN:VEVENT
+UID:studio-research@fixture.example
+DTSTART;TZID=Europe/Berlin:20260929T110000
+DTEND;TZID=Europe/Berlin:20260929T120000
+SUMMARY:Research synthesis
+LOCATION:Video call
+END:VEVENT
+BEGIN:VEVENT
+UID:studio-review@fixture.example
+DTSTART;TZID=Europe/Berlin:20260930T140000
+DTEND;TZID=Europe/Berlin:20260930T153000
+SUMMARY:Website design review
+LOCATION:Studio room 1
+END:VEVENT
+BEGIN:VEVENT
+UID:shared-planning@fixture.example
+DTSTART:20261001T070000Z
+DTEND:20261001T080000Z
+SUMMARY:Weekly planning
+LOCATION:Video call
+END:VEVENT
+BEGIN:VEVENT
+UID:studio-focus@fixture.example
+DTSTART;TZID=Europe/Berlin:20261002T100000
+DTEND;TZID=Europe/Berlin:20261002T120000
+SUMMARY:Build & refine
+LOCATION:Focus time
+END:VEVENT
+END:VCALENDAR

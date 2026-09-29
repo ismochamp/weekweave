@@ -1,0 +1,26 @@
+{
+  "folder": "12_Calendar_Feed_Integrator",
+  "name": "WeekWeave",
+  "title": "Calendar Feed Integration & Conflict Review",
+  "category": "API & System Integration",
+  "problem": "Separate calendars obscure duplicate events, timezone differences and overlapping busy periods.",
+  "solution": "A working ICS file/feed integrator that normalizes times, merges exact duplicates, finds overlaps and exports a consolidated calendar.",
+  "features": [
+    "ICS upload, paste or real HTTP feed import",
+    "IANA timezone normalization and DST validation",
+    "Exact duplicate merging and busy-event overlap review",
+    "Consolidated ICS and spreadsheet-safe conflict CSV export"
+  ],
+  "verification": "13 automated tests passed. Actual HTTP verification feeds yield 9 merged events from 10 source events, with 1 duplicate and 2 overlapping pairs.",
+  "limitations": "New independent project with fictional verification calendars. Documented RFC 5545 subset: recurrence and embedded VTIMEZONE/VALARM rejected. Local single-user service; no OAuth, source writeback, automatic refresh or public deployment.",
+  "flow": "ICS files / HTTP feeds \u2192 Validate whole source \u2192 Normalize & persist \u2192 Merge exact matches \u2192 Review overlaps \u2192 ICS / CSV export",
+  "port": 8112,
+  "screenshots": [
+    "01-workspace.png",
+    "02-result.png"
+  ],
+  "captions": [
+    "Separate HTTP verification feeds become one timezone-aligned calendar with source labels.",
+    "Actual merged calendar events and two computed overlap intervals, with source labels and import controls."
+  ]
+}

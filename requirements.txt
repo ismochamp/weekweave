@@ -1,0 +1,2 @@
+# Python 3.11+; application uses the standard library.
+# WeekWeave additionally needs an available IANA timezone database.

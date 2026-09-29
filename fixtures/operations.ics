@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WeekWeave//Fictional Verification Fixture//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Operations · verification fixture
+BEGIN:VEVENT
+UID:ops-partner@fixture.example
+DTSTART;TZID=America/New_York:20260928T040000
+DTEND;TZID=America/New_York:20260928T050000
+SUMMARY:Partner onboarding
+LOCATION:Video call · New York team
+DESCRIPTION:This fixture tests IANA timezone normalization.
+END:VEVENT
+BEGIN:VEVENT
+UID:ops-process@fixture.example
+DTSTART:20260929T120000Z
+DTEND:20260929T130000Z
+SUMMARY:Process improvement
+LOCATION:Operations desk
+END:VEVENT
+BEGIN:VEVENT
+UID:ops-systems@fixture.example
+DTSTART:20260930T123000Z
+DTEND:20260930T133000Z
+SUMMARY:Systems check-in
+LOCATION:Video call
+END:VEVENT
+BEGIN:VEVENT
+UID:shared-planning@fixture.example
+DTSTART:20261001T070000Z
+DTEND:20261001T080000Z
+SUMMARY:Weekly planning
+LOCATION:Video call
+END:VEVENT
+BEGIN:VEVENT
+UID:ops-wrap@fixture.example
+DTSTART;TZID=Europe/Berlin:20261002T143000
+DTEND;TZID=Europe/Berlin:20261002T150000
+SUMMARY:Weekly wrap-up
+LOCATION:Operations desk
+END:VEVENT
+END:VCALENDAR
