@@ -115,8 +115,6 @@ python3 -m unittest -v test_app.py
 
 Thirteen automated tests use temporary databases and real loopback HTTP feed requests. `TEST_RESULTS.md` summarizes coverage and `test-run.txt` contains the captured run.
 
-`CASE_STUDY.md`, `MALT_COPY.md`, `portfolio_metadata.json`, `screenshots/` and the assembled `PORTFOLIO.pdf` provide the presentation materials. No videos are included.
-
 ## License
 
 [MIT License](LICENSE) — Copyright (c) 2026 Ismail Habib.
